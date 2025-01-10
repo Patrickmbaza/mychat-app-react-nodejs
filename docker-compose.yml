@@ -12,7 +12,7 @@ services:
 
   public:
     build: ./public
-    image: akurasy/frontend
+    image: rayitern/frontend
     container_name: public
     networks:
       - app-network
@@ -23,7 +23,7 @@ services:
 
   server:
     build: ./server
-    image: akurasy/backend
+    image: rayitern/backend
     container_name: server
     networks:
       - app-network

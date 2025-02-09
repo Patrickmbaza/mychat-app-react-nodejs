@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3.8'
 
 networks:
 
@@ -12,7 +12,7 @@ services:
 
   public:
     build: ./public
-    image: rayitern/frontend
+    image: patrick/frontend
     container_name: public
     networks:
       - app-network
@@ -23,7 +23,7 @@ services:
 
   server:
     build: ./server
-    image: rayitern/backend
+    image: patrick/backend
     container_name: server
     networks:
       - app-network
